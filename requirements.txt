@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-dotenv
+google-generativeai
+langchain-google-genai
+google-cloud-translate # For potential future use or alternative
+# Add other necessary backend dependencies as they arise

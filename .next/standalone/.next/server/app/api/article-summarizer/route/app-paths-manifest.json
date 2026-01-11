@@ -1,0 +1,3 @@
+{
+  "/api/article-summarizer/route": "app/api/article-summarizer/route.js"
+}

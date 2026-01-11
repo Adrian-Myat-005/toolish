@@ -1,0 +1,15 @@
+{
+  "/(main)/about/page": "app/(main)/about/page.js",
+  "/(main)/article-summarizer/page": "app/(main)/article-summarizer/page.js",
+  "/(main)/ereader/page": "app/(main)/ereader/page.js",
+  "/(main)/page": "app/(main)/page.js",
+  "/(main)/posts/[slug]/page": "app/(main)/posts/[slug]/page.js",
+  "/(main)/posts/page": "app/(main)/posts/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/ai-reader/route": "app/api/ai-reader/route.js",
+  "/api/article-summarizer/route": "app/api/article-summarizer/route.js",
+  "/api/translate/route": "app/api/translate/route.js",
+  "/api/validate-key/route": "app/api/validate-key/route.js",
+  "/studio/[[...tool]]/page": "app/studio/[[...tool]]/page.js"
+}

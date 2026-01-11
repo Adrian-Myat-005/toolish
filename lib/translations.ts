@@ -1,0 +1,273 @@
+export const translations = {
+  en: {
+    read_more: "Read More",
+    view_list: "List View",
+    back_to_posts: "Back to posts",
+    back_to_home: "Back to home",
+    about: "About",
+    listen: "Listen",
+    stop: "Stop",
+    open_menu: "Open Menu",
+    voice_language: "Voice Language",
+    english: "English",
+    burmese: "Burmese",
+    loading: "Loading...",
+    latest_stories: "Latest Stories",
+    site_description: "Thoughts, tutorials, and insights on development and design.",
+    no_posts: "No posts found.",
+    no_image: "No image",
+    about_me: "About Me",
+    welcome: "Welcome",
+    explore_sections: "The House of AI powered utility tools",
+    ereader_title: "E-Reader",
+    ereader_desc: "Distraction-free reading",
+    analysis_title: "Article Summarizer",
+    analysis_desc: "paste the url and got the ideas",
+    stories_desc: "Read the latest updates",
+    about_desc: "Get to know me",
+    contact: "Contact",
+    contact_twitter: "Feel free to reach out to me on",
+    default_bio: "Hi, welcome to my vlog.",
+    tutor: "AI Tutor",
+    tutor_welcome: "Hi! I'm your AI Tutor. What would you like to learn today?",
+    tutor_placeholder: "Ask me anything...",
+    tutor_upload_docs: "Upload Documents",
+    tutor_upload_images: "Upload Images",
+    tutor_voice_input: "Voice Input",
+    tutor_mode_learning: "Learning Mode",
+    tutor_mode_research: "Research Mode",
+    tutor_step_by_step: "Step-by-step guidance",
+    tutor_clear_chat: "Clear Chat",
+    tutor_guide: "User Guide",
+    tutor_guide_desc: "How to use DeepTutor",
+    tutor_notebook_saved: "Saved to notebook!",
+    tutor_mode_solver_desc: "Step-by-step logic & LaTeX math",
+    tutor_mode_research_desc: "Topic synthesis & citations",
+    tutor_mode_quiz_desc: "Test your knowledge",
+    tutor_draw_capability: "Can generate diagrams & charts",
+    tutor_memory: "Memory",
+    tutor_memory_desc: "What I know about you",
+    tutor_memory_placeholder: "e.g., I am a medical student, I prefer short explanations...",
+    tutor_voice_mode: "Voice Teacher Mode",
+    tutor_voice_mode_on: "Voice Mode ON",
+    tutor_voice_mode_off: "Voice Mode OFF",
+    tutor_language: "Instruction Language",
+    tutor_lang_en: "English Teacher",
+    tutor_lang_mm: "Burmese Teacher",
+    ereader_summarize: "Summarize",
+    ereader_create_mcqs: "Create MCQs",
+    ereader_study_notes: "Study Notes",
+    ereader_exam_prep: "Exam Prep",
+    ereader_ai_assistant: "Toolish AI Assistant",
+    ereader_ask_placeholder: "Ask about this book...",
+    ereader_query_ai: "Query AI",
+    article_analysis_title: "Article Summarizer",
+    article_analysis_description: "paste the url and got the ideas",
+    enter_article_url: "Enter article URL",
+    analyzing: "Analyzing...",
+    analyze_article: "summarize",
+    analysis_results: "Analysis Results",
+    error: "Error",
+    auth_required: "Authentication Required",
+    login_to_proceed: "Login to Proceed",
+    login_required_desc: "Please sign in to unlock Toolish AI capabilities.",
+    api_stamina: "API Stamina",
+    engine_health: "AI Engine Health • Real-time Monitoring",
+    instant_connect: "Instant Connect",
+    manual_config: "Manual Config",
+    gate_title: "Gate",
+    gate_desc: "Access your global persona",
+    identity_basics: "Identity Basics",
+    email_address: "Email Address",
+    security_key: "Security Key",
+    authenticate: "Authenticate",
+    forge_identity: "Forge Identity",
+    omni_connect: "Omni-Connect",
+    new_persona: "Require New Persona?",
+    known_entity: "Known Entity?",
+    privilege_console: "Privilege Console",
+    full_archive: "Full Archive",
+    view_all_posts: "View All Posts"
+  },
+  mm: {
+    read_more: "ဆက်လက်ဖတ်ရှုရန်",
+    view_list: "စာရင်းပုံစံ",
+    back_to_posts: "ဆောင်းပါးများသို့ ပြန်သွားရန်",
+    back_to_home: "ပင်မစာမျက်နှာသို့",
+    about: "ကျွန်တော့်အကြောင်း",
+    listen: "နားထောင်ရန်",
+    stop: "ရပ်ရန်",
+    open_menu: "မီနူးဖွင့်ရန်",
+    voice_language: "အသံ ဘာသာစကား",
+    english: "အင်္ဂလိပ်",
+    burmese: "မြန်မာ",
+    loading: "လုပ်ဆောင်နေပါသည်...",
+    latest_stories: "နောက်ဆုံးရ ဆောင်းပါးများ",
+    site_description: "နည်းပညာနှင့် ဒီဇိုင်းပိုင်းဆိုင်ရာ အတွေးအမြင်များ၊ သင်ခန်းစာများ။",
+    no_posts: "ဆောင်းပါးများ မတွေ့ရှိပါ။",
+    no_image: "ပုံမရှိပါ",
+    about_me: "ကျွန်ုပ်အကြောင်း",
+    welcome: "ကြိုဆိုပါတယ်",
+    explore_sections: "AI စွမ်းအင်သုံး အသုံးချကိရိယာများ စုစည်းမှု",
+    ereader_title: "E-Reader",
+    ereader_desc: "အနှောင့်အယှက်ကင်းကင်း ဖတ်ရှုရန်",
+    analysis_title: "Article Summarizer",
+    analysis_desc: "URL ထည့်သွင်းပြီး အနှစ်ချုပ်ရယူပါ",
+    stories_desc: "နောက်ဆုံးရ အကြောင်းအရာများကို ဖတ်ရှုရန်",
+    about_desc: "ကျွန်တော့်အကြောင်း သိကောင်းစရာ",
+    contact: "ဆက်သွယ်ရန်",
+    contact_twitter: "Twitter တွင် ဆက်သွယ်နိုင်ပါသည်။",
+    default_bio: "မင်္ဂလာပါ၊ ကျွန်ုပ်၏ vlog မှ ကြိုဆိုပါသည်။",
+    tutor: "AI သင်ကြားရေးဆရာ",
+    tutor_welcome: "မင်္ဂလာပါ! ကျွန်တော်က သင့်ရဲ့ AI သင်ကြားရေးဆရာပါ။ ဒီနေ့ ဘာလေ့လာချင်သလဲ?",
+    tutor_placeholder: "တစ်ခုခုမေးပါ...",
+    tutor_upload_docs: "စာရွက်စာတမ်းတင်ရန်",
+    tutor_upload_images: "ပုံတင်ရန်",
+    tutor_voice_input: "အသံဖြင့်မေးမြန်းရန်",
+    tutor_mode_learning: "သင်ယူမှုပုံစံ",
+    tutor_mode_research: "သုတေသနပုံစံ",
+    tutor_step_by_step: "အဆင့်ဆင့် ရှင်းပြချက်",
+    tutor_clear_chat: "စကားဝိုင်းဖျက်ရန်",
+    tutor_guide: "အသုံးပြုပုံလမ်းညွှန်",
+    tutor_guide_desc: "DeepTutor အသုံးပြုနည်း",
+    tutor_notebook_saved: "မှတ်စုထဲသို့ သိမ်းဆည်းပြီးပါပြီ!",
+    tutor_mode_solver_desc: "အဆင့်ဆင့်တွက်ချက်မှုနှင့် LaTeX သင်္ချာ",
+    tutor_mode_research_desc: "သုတေသနပြုခြင်းနှင့် အကိုးအကားများ",
+    tutor_mode_quiz_desc: "မိမိကိုယ်ကို စစ်ဆေးခြင်း",
+    tutor_draw_capability: "ပုံကြမ်းများနှင့် ဇယားများ ရေးဆွဲပေးနိုင်သည်",
+    tutor_memory: "မှတ်ဉာဏ်",
+    tutor_memory_desc: "သင့်အကြောင်း သိရှိထားမှုများ",
+    tutor_memory_placeholder: "ဥပမာ - ကျွန်တော်က ဆေးကျောင်းသားပါ၊ တိုတိုတုတ်တုတ် ရှင်းပြတာ ကြိုက်ပါတယ်...",
+    tutor_voice_mode: "အသံဖြင့် သင်ကြားရေးစနစ်",
+    tutor_voice_mode_on: "အသံစနစ် ဖွင့်ထားသည်",
+    tutor_voice_mode_off: "အသံစနစ် ပိတ်ထားသည်",
+    tutor_language: "သင်ကြားမည့် ဘာသာစကား",
+    tutor_lang_en: "အင်္ဂလိပ်ဆရာ",
+    tutor_lang_mm: "မြန်မာဆရာ",
+    ereader_summarize: "အနှစ်ချုပ်",
+    ereader_create_mcqs: "မေးခွန်းများ ထုတ်ရန်",
+    ereader_study_notes: "လေ့လာမှု မှတ်စုများ",
+    ereader_exam_prep: "စာမေးပွဲအတွက် ပြင်ဆင်ရန်",
+    ereader_ai_assistant: "Toolish AI အကူအညီ",
+    ereader_ask_placeholder: "ဤစာအုပ်အကြောင်း မေးမြန်းပါ...",
+    ereader_query_ai: "AI ကို မေးမြန်းပါ",
+    article_analysis_title: "Article Summarizer",
+    article_analysis_description: "ဆောင်းပါးများကို လေ့လာမှုမှတ်စုအဖြစ် ပြောင်းလဲပေးသည်",
+    enter_article_url: "ဆောင်းပါး URL ထည့်ပါ",
+    analyzing: "ခွဲခြမ်းစိတ်ဖြာနေသည်...",
+    analyze_article: "အကျဉ်းချုပ်ရယူရန်",
+    analysis_results: "ခွဲခြမ်းစိတ်ဖြာမှု ရလဒ်များ",
+    error: "အမှား",
+    auth_required: "အကောင့်ဝင်ရန် လိုအပ်ပါသည်",
+    login_to_proceed: "ဆက်လက်လုပ်ဆောင်ရန် အကောင့်ဝင်ပါ",
+    login_required_desc: "Toolish AI ၏ စွမ်းဆောင်ရည်များကို အသုံးပြုရန် အကောင့်ဝင်ပေးပါ။",
+    api_stamina: "API အင်အား",
+    engine_health: "AI အင်ဂျင် အခြေအနေ • အချိန်နှင့်တပြေးညီ စောင့်ကြည့်မှု",
+    instant_connect: "အမြန်ချိတ်ဆက်မှု",
+    manual_config: "ကိုယ်တိုင် ပြင်ဆင်မှု",
+    gate_title: "တံခါးပေါက်",
+    gate_desc: "သင်၏ အကောင့်ထဲသို့ ဝင်ရောက်ပါ",
+    identity_basics: "အခြေခံ အချက်အလက်များ",
+    email_address: "အီးမေးလ် လိပ်စာ",
+    security_key: "လုံခြုံရေးကုဒ်",
+    authenticate: "အကောင့်ဝင်မည်",
+    forge_identity: "အကောင့်အသစ် ဖွင့်မည်",
+    omni_connect: "Google ဖြင့် ဝင်မည်",
+    new_persona: "အကောင့်အသစ် လိုအပ်ပါသလား?",
+    known_entity: "အကောင့်ရှိပြီးသားလား?",
+    privilege_console: "စီမံခန့်ခွဲမှု ပန်နယ်",
+    full_archive: "ဆောင်းပါး စုစည်းမှု",
+    view_all_posts: "ဆောင်းပါးအားလုံးကို ကြည့်မည်"
+  }
+};
+
+export type Language = 'en' | 'mm';
+export type TranslationKey = 
+  | "read_more"
+  | "view_list"
+  | "back_to_posts"
+  | "back_to_home"
+  | "about"
+  | "listen"
+  | "stop"
+  | "open_menu"
+  | "voice_language"
+  | "english"
+  | "burmese"
+  | "loading"
+  | "latest_stories"
+  | "site_description"
+  | "no_posts"
+  | "no_image"
+  | "about_me"
+  | "welcome"
+  | "explore_sections"
+  | "ereader_title"
+  | "ereader_desc"
+  | "analysis_title"
+  | "analysis_desc"
+  | "stories_desc"
+  | "about_desc"
+  | "contact"
+  | "contact_twitter"
+  | "default_bio"
+  | "tutor"
+  | "tutor_welcome"
+  | "tutor_placeholder"
+  | "tutor_upload_docs"
+  | "tutor_upload_images"
+  | "tutor_voice_input"
+  | "tutor_mode_learning"
+  | "tutor_mode_research"
+  | "tutor_step_by_step"
+  | "tutor_clear_chat"
+  | "tutor_guide"
+  | "tutor_guide_desc"
+  | "tutor_notebook_saved"
+  | "tutor_mode_solver_desc"
+  | "tutor_mode_research_desc"
+  | "tutor_mode_quiz_desc"
+  | "tutor_draw_capability"
+  | "tutor_memory"
+  | "tutor_memory_desc"
+  | "tutor_memory_placeholder"
+  | "tutor_voice_mode"
+  | "tutor_voice_mode_on"
+  | "tutor_voice_mode_off"
+  | "tutor_language"
+  | "tutor_lang_en"
+  | "tutor_lang_mm"
+  | "ereader_summarize"
+  | "ereader_create_mcqs"
+  | "ereader_study_notes"
+  | "ereader_exam_prep"
+  | "ereader_ai_assistant"
+  | "ereader_ask_placeholder"
+  | "ereader_query_ai"
+  | "article_analysis_title"
+  | "article_analysis_description"
+  | "enter_article_url"
+  | "analyzing"
+  | "analyze_article"
+  | "analysis_results"
+  | "error"
+  | "auth_required"
+  | "login_to_proceed"
+  | "login_required_desc"
+  | "api_stamina"
+  | "engine_health"
+  | "instant_connect"
+  | "manual_config"
+  | "gate_title"
+  | "gate_desc"
+  | "identity_basics"
+  | "email_address"
+  | "security_key"
+  | "authenticate"
+  | "forge_identity"
+  | "omni_connect"
+  | "new_persona"
+  | "known_entity"
+  | "privilege_console"
+  | "full_archive"
+  | "view_all_posts";

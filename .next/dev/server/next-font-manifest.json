@@ -1,0 +1,14 @@
+{
+  "app": {
+    "[project]/app/(main)/about/page": [],
+    "[project]/app/(main)/article-analysis/page": [],
+    "[project]/app/(main)/article-summarizer/page": [],
+    "[project]/app/(main)/ereader/page": [],
+    "[project]/app/(main)/page": [],
+    "[project]/app/(main)/posts/[slug]/page": [],
+    "[project]/app/(main)/posts/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

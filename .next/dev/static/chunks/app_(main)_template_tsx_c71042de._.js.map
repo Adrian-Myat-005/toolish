@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/adrian/Desktop/vlog-web/app/%28main%29/template.tsx"],"sourcesContent":["'use client'\n\nimport { motion } from 'framer-motion'\n\nexport default function Template({ children }: { children: React.ReactNode }) {\n  return (\n    <motion.div\n      initial={{ opacity: 0 }}\n      animate={{ opacity: 1 }}\n      transition={{ \n        duration: 0.4,\n        ease: \"easeInOut\",\n      }}\n      style={{ willChange: \"opacity\" }}\n    >\n      {children}\n    </motion.div>\n  )\n}"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAAS,SAAS,EAAE,QAAQ,EAAiC;IAC1E,qBACE,6LAAC,uMAAM,CAAC,GAAG;QACT,SAAS;YAAE,SAAS;QAAE;QACtB,SAAS;YAAE,SAAS;QAAE;QACtB,YAAY;YACV,UAAU;YACV,MAAM;QACR;QACA,OAAO;YAAE,YAAY;QAAU;kBAE9B;;;;;;AAGP;KAdwB"}}]
+}

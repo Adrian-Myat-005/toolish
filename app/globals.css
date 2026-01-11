@@ -1,0 +1,475 @@
+@import 'katex/dist/katex.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0px;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    /* Premium Minimal Font Stack - General */
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    @apply bg-background text-foreground transition-colors duration-700 antialiased;
+    line-height: 1.6;
+    font-variant-ligatures: normal; /* Ensure ligatures are handled well */
+  }
+
+  /* Language Balancing & Burmese Specific Styles */
+  body.lang-mm {
+    /* Prioritize Noto Sans Myanmar for Burmese text */
+    font-family: 'Noto Sans Myanmar', system-ui, -apple-system, sans-serif;
+    line-height: 1.8; /* Already present, good for Burmese */
+    font-size: 1.05em; /* Slightly larger base font size for readability */
+  }
+
+  /* Reader Mode Scaling */
+  .reader-article-container {
+    --reader-scale: calc(var(--reader-font-size, 100%) / 100);
+  }
+
+  .reader-article-container .prose {
+    font-size: var(--reader-font-size, 100%);
+  }
+
+  /* Force internal prose elements to scale relative to the prose container */
+  .reader-article-container .prose p,
+  .reader-article-container .prose li,
+  .reader-article-container .prose blockquote,
+  .reader-article-container .prose code {
+    font-size: 1em !important;
+  }
+
+  .reader-article-container .prose h1 { font-size: 2.25em !important; }
+  .reader-article-container .prose h2 { font-size: 1.5em !important; }
+  .reader-article-container .prose h3 { font-size: 1.25em !important; }
+  .reader-article-container .prose h4 { font-size: 1.125em !important; }
+}
+
+@layer components {
+  .btn-minimal {
+    @apply px-6 py-2 border border-foreground/10 hover:border-foreground transition-all duration-500 text-sm font-medium;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-foreground/20 hover:bg-foreground/40;
+}
+
+/* --- DeepTutor Styles (Additive Only) --- */
+
+/* Markdown Styles */
+.prose pre {
+  @apply bg-slate-950 text-slate-50 rounded-lg p-4 overflow-x-auto my-4;
+}
+
+.prose code {
+  @apply bg-slate-100 text-slate-900 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.dark .prose code {
+  @apply bg-slate-700 text-slate-200;
+}
+
+.prose pre code {
+  @apply bg-transparent text-inherit p-0;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  @apply font-semibold tracking-tight text-slate-900 mt-8 mb-4;
+}
+
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3 {
+  @apply text-slate-100;
+}
+
+.prose p {
+  @apply leading-7 mb-4 text-slate-800;
+}
+
+.dark .prose p {
+  @apply text-slate-300;
+}
+
+.prose ul {
+  @apply list-disc list-outside ml-6 mb-4 text-slate-800;
+}
+
+.dark .prose ul {
+  @apply text-slate-300;
+}
+
+.prose ol {
+  @apply list-decimal list-outside ml-6 mb-4 text-slate-800;
+}
+
+.dark .prose ol {
+  @apply text-slate-300;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-500 pl-4 italic my-4 text-slate-700;
+}
+
+.dark .prose blockquote {
+  @apply text-slate-400 border-blue-400;
+}
+
+.prose a {
+  @apply text-blue-600 hover:text-blue-700 underline;
+}
+
+.dark .prose a {
+  @apply text-blue-400 hover:text-blue-300;
+}
+
+/* Prose strong/bold */
+.prose strong {
+  @apply text-slate-900 font-semibold;
+}
+
+.dark .prose strong {
+  @apply text-slate-100;
+}
+
+/* KaTeX Styles for Dark Mode */
+.dark .katex {
+  color: #e2e8f0;
+}
+
+.dark .katex .mord,
+.dark .katex .mbin,
+.dark .katex .mrel,
+.dark .katex .mopen,
+.dark .katex .mclose,
+.dark .katex .mpunct,
+.dark .katex .minner,
+.dark .katex .mop {
+  color: #e2e8f0;
+}
+
+/* Tables in dark mode */
+.prose table {
+  @apply border-collapse;
+}
+
+.prose th {
+  @apply bg-slate-100 text-slate-900 font-semibold px-4 py-2 border border-slate-200;
+}
+
+.dark .prose th {
+  @apply bg-slate-700 text-slate-100 border-slate-600;
+}
+
+.prose td {
+  @apply px-4 py-2 border border-slate-200 text-slate-800;
+}
+
+.dark .prose td {
+  @apply border-slate-600 text-slate-300;
+}
+
+/* Custom Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+/* Rough Notation - Handwritten style annotations */
+.rough-notation-container {
+  /* Ensure SVG filters are available */
+}
+
+.rough-notation {
+  display: inline;
+  position: relative;
+}
+
+/* Circle annotation - handwritten style */
+.rough-circle {
+  position: relative;
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.rough-circle::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2.5px solid #ef4444;
+  border-radius: 50%;
+  transform: rotate(-2deg);
+  filter: url(#rough-filter);
+  animation: rough-draw 0.5s ease-out forwards;
+}
+
+.rough-circle::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  right: -6px;
+  bottom: -5px;
+  border: 1.5px solid rgba(239, 68, 68, 0.4);
+  border-radius: 45% 55% 50% 50%;
+  transform: rotate(1deg);
+}
+
+/* Highlight annotation - handwritten highlighter effect */
+.rough-highlight {
+  background:
+    linear-gradient(
+      104deg,
+      rgba(254, 240, 138, 0) 0.9%,
+      rgba(254, 240, 138, 1) 2.4%,
+      rgba(254, 240, 138, 0.5) 5.8%,
+      rgba(254, 240, 138, 0.3) 93%,
+      rgba(254, 240, 138, 0.8) 96%,
+      rgba(254, 240, 138, 0) 98%
+    ),
+    linear-gradient(
+      183deg,
+      rgba(254, 240, 138, 0) 0%,
+      rgba(254, 240, 138, 0.4) 7.9%,
+      rgba(254, 240, 138, 0) 15%
+    );
+  padding: 0.1em 0.2em;
+  margin: 0 -0.2em;
+  border-radius: 0.2em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Box annotation - handwritten border effect */
+.rough-box {
+  position: relative;
+  display: inline-block;
+  padding: 2px 6px;
+}
+
+.rough-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  right: -3px;
+  bottom: -2px;
+  border: 2px solid #3b82f6;
+  border-radius: 2px;
+  transform: rotate(-0.5deg) skewX(-0.5deg);
+}
+
+.rough-box::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  right: -5px;
+  bottom: -4px;
+  border: 1.5px solid rgba(59, 130, 246, 0.3);
+  border-radius: 1px;
+  transform: rotate(0.5deg);
+}
+
+/* Underline annotation - handwritten wavy line effect */
+.rough-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.rough-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 4px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath d='M0 3 Q5 0 10 3 T20 3' stroke='%231e293b' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")
+    repeat-x;
+  background-size: 12px 4px;
+}
+
+.dark .rough-underline::after {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath d='M0 3 Q5 0 10 3 T20 3' stroke='%23e2e8f0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")
+    repeat-x;
+  background-size: 12px 4px;
+}
+
+/* Dark mode for rough highlight */
+.dark .rough-highlight {
+  background:
+    linear-gradient(
+      104deg,
+      rgba(251, 191, 36, 0) 0.9%,
+      rgba(251, 191, 36, 0.4) 2.4%,
+      rgba(251, 191, 36, 0.2) 5.8%,
+      rgba(251, 191, 36, 0.15) 93%,
+      rgba(251, 191, 36, 0.35) 96%,
+      rgba(251, 191, 36, 0) 98%
+    ),
+    linear-gradient(
+      183deg,
+      rgba(251, 191, 36, 0) 0%,
+      rgba(251, 191, 36, 0.2) 7.9%,
+      rgba(251, 191, 36, 0) 15%
+    );
+}
+
+/* Bracket annotation - handwritten bracket effect */
+.rough-bracket {
+  display: inline;
+}
+
+.rough-bracket-container {
+  position: relative;
+  padding-left: 16px;
+  margin-left: 4px;
+}
+
+.rough-bracket-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -4px;
+  bottom: -4px;
+  width: 10px;
+  border-left: 3px solid #8b5cf6;
+  border-top: 3px solid #8b5cf6;
+  border-bottom: 3px solid #8b5cf6;
+  border-radius: 4px 0 0 4px;
+  transform: scaleX(0.6);
+  transform-origin: left center;
+}
+
+/* Bracket style when used directly as inline element */
+span.rough-bracket {
+  border-left: 3px solid #8b5cf6;
+  padding-left: 8px;
+  margin-left: 4px;
+  display: inline;
+  position: relative;
+}
+
+span.rough-bracket::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: -2px;
+  width: 8px;
+  height: 3px;
+  border-left: 3px solid #8b5cf6;
+  border-top: 3px solid #8b5cf6;
+  border-radius: 3px 0 0 0;
+}
+
+span.rough-bracket::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: -2px;
+  width: 8px;
+  height: 3px;
+  border-left: 3px solid #8b5cf6;
+  border-bottom: 3px solid #8b5cf6;
+  border-radius: 0 0 0 3px;
+}
+
+/* Hand-drawn effect animation */
+@keyframes rough-draw {
+  from {
+    stroke-dashoffset: 100;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+/* Simplified styles for PDF export */
+@media print {
+  .rough-circle::before,
+  .rough-circle::after,
+  .rough-box::before,
+  .rough-box::after,
+  .rough-underline::after,
+  .rough-bracket-container::before {
+    filter: none;
+    animation: none;
+  }
+}
