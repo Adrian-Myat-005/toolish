@@ -274,7 +274,7 @@ export function EreaderTabContent({
             <div className="p-4 border-b border-border flex items-center justify-between bg-muted/20">
               <div className="flex items-center gap-2 font-black uppercase tracking-widest text-[10px]">
                 <Sparkles size={14} className="text-primary animate-pulse" />
-                <span>{t('ereader_ai_assistant')}</span>
+                <span>{t('ai_assistant')}</span>
               </div>
               <button onClick={() => setAiPanelOpen(false)} className="p-1.5 hover:bg-muted rounded-full transition-colors">
                 <X size={18} />

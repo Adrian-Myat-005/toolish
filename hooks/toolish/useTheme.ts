@@ -2,12 +2,7 @@
  * useTheme hook for managing theme throughout the application
  */
 import { useEffect, useState } from "react";
-import {
-  setTheme,
-  getStoredTheme,
-  initializeTheme,
-  type Theme,
-} from "@/lib/deeptutor/theme";
+import { THEME_STORAGE_KEY, applyThemeToDocument, initializeTheme, setTheme, type Theme } from "../../lib/toolish/theme";
 
 export function useTheme() {
   const [theme, setThemeState] = useState<Theme | null>(null);

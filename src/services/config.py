@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 load_dotenv(PROJECT_ROOT / ".env", override=True) # Load root .env
-load_dotenv(PROJECT_ROOT / "DeepTutor.env", override=True) # Load DeepTutor.env
+load_dotenv(PROJECT_ROOT / ".env", override=True) # Load .env
 
 @dataclass
 class LLMConfig:

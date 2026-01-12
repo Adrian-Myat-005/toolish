@@ -24,7 +24,7 @@ def _get_setup_logger():
 
 def init_user_directories(project_root: Path | None = None) -> None:
     if project_root is None:
-        project_root = Path(__file__).parent.parent.parent.parent # /DeepTutor
+        project_root = Path(__file__).parent.parent.parent.parent # /toolish
 
     user_data_dir = project_root / "data" / "user" # Simple default for now
 

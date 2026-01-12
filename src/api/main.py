@@ -8,7 +8,7 @@ app.include_router(translate.router, prefix="/api/v1") # Include the translate r
 
 @app.get("/")
 async def root():
-    return {"message": "DeepTutor Backend (Minimal)"}
+    return {"message": "Toolish Backend (Minimal)"}
 
 # Add CORS middleware to allow frontend access
 from fastapi.middleware.cors import CORSMiddleware

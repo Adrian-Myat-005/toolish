@@ -28,39 +28,41 @@ export const translations = {
     contact: "Contact",
     contact_twitter: "Feel free to reach out to me on",
     default_bio: "Hi, welcome to my vlog.",
-    tutor: "AI Tutor",
-    tutor_welcome: "Hi! I'm your AI Tutor. What would you like to learn today?",
-    tutor_placeholder: "Ask me anything...",
-    tutor_upload_docs: "Upload Documents",
-    tutor_upload_images: "Upload Images",
-    tutor_voice_input: "Voice Input",
-    tutor_mode_learning: "Learning Mode",
-    tutor_mode_research: "Research Mode",
-    tutor_step_by_step: "Step-by-step guidance",
-    tutor_clear_chat: "Clear Chat",
-    tutor_guide: "User Guide",
-    tutor_guide_desc: "How to use DeepTutor",
-    tutor_notebook_saved: "Saved to notebook!",
-    tutor_mode_solver_desc: "Step-by-step logic & LaTeX math",
-    tutor_mode_research_desc: "Topic synthesis & citations",
-    tutor_mode_quiz_desc: "Test your knowledge",
-    tutor_draw_capability: "Can generate diagrams & charts",
-    tutor_memory: "Memory",
-    tutor_memory_desc: "What I know about you",
-    tutor_memory_placeholder: "e.g., I am a medical student, I prefer short explanations...",
-    tutor_voice_mode: "Voice Teacher Mode",
-    tutor_voice_mode_on: "Voice Mode ON",
-    tutor_voice_mode_off: "Voice Mode OFF",
-    tutor_language: "Instruction Language",
-    tutor_lang_en: "English Teacher",
-    tutor_lang_mm: "Burmese Teacher",
+    ai_welcome: "Hi! I'm your AI Assistant. How can I help you today?",
+    ai_placeholder: "Ask me anything...",
+    upload_docs: "Upload Documents",
+    upload_images: "Upload Images",
+    voice_input: "Voice Input",
+    mode_learning: "Learning Mode",
+    mode_research: "Research Mode",
+    step_by_step: "Step-by-step guidance",
+    clear_chat: "Clear Chat",
+    user_guide: "User Guide",
+    user_guide_desc: "How to use this tool",
+    notebook_saved: "Saved to notebook!",
+    mode_solver_desc: "Step-by-step logic & LaTeX math",
+    mode_research_desc: "Topic synthesis & citations",
+    mode_quiz_desc: "Test your knowledge",
+    draw_capability: "Can generate diagrams & charts",
+    memory: "Memory",
+    memory_desc: "What I know about you",
+    memory_placeholder: "e.g., I am a medical student, I prefer short explanations...",
+    voice_mode: "Voice Mode",
+    voice_mode_on: "Voice Mode ON",
+    voice_mode_off: "Voice Mode OFF",
+    instruction_language: "Instruction Language",
+    lang_en: "English",
+    lang_mm: "Burmese",
     ereader_summarize: "Summarize",
     ereader_create_mcqs: "Create MCQs",
     ereader_study_notes: "Study Notes",
     ereader_exam_prep: "Exam Prep",
-    ereader_ai_assistant: "Toolish AI Assistant",
+    ai_assistant: "Toolish AI Assistant",
     ereader_ask_placeholder: "Ask about this book...",
     ereader_query_ai: "Query AI",
+    no_book_open: "No Book Open",
+    no_book_desc: "Select a book from your library to start reading.",
+    open_library: "Open Library",
     article_analysis_title: "Article Summarizer",
     article_analysis_description: "paste the url and got the ideas",
     enter_article_url: "Enter article URL",
@@ -118,39 +120,41 @@ export const translations = {
     contact: "ဆက်သွယ်ရန်",
     contact_twitter: "Twitter တွင် ဆက်သွယ်နိုင်ပါသည်။",
     default_bio: "မင်္ဂလာပါ၊ ကျွန်ုပ်၏ vlog မှ ကြိုဆိုပါသည်။",
-    tutor: "AI သင်ကြားရေးဆရာ",
-    tutor_welcome: "မင်္ဂလာပါ! ကျွန်တော်က သင့်ရဲ့ AI သင်ကြားရေးဆရာပါ။ ဒီနေ့ ဘာလေ့လာချင်သလဲ?",
-    tutor_placeholder: "တစ်ခုခုမေးပါ...",
-    tutor_upload_docs: "စာရွက်စာတမ်းတင်ရန်",
-    tutor_upload_images: "ပုံတင်ရန်",
-    tutor_voice_input: "အသံဖြင့်မေးမြန်းရန်",
-    tutor_mode_learning: "သင်ယူမှုပုံစံ",
-    tutor_mode_research: "သုတေသနပုံစံ",
-    tutor_step_by_step: "အဆင့်ဆင့် ရှင်းပြချက်",
-    tutor_clear_chat: "စကားဝိုင်းဖျက်ရန်",
-    tutor_guide: "အသုံးပြုပုံလမ်းညွှန်",
-    tutor_guide_desc: "DeepTutor အသုံးပြုနည်း",
-    tutor_notebook_saved: "မှတ်စုထဲသို့ သိမ်းဆည်းပြီးပါပြီ!",
-    tutor_mode_solver_desc: "အဆင့်ဆင့်တွက်ချက်မှုနှင့် LaTeX သင်္ချာ",
-    tutor_mode_research_desc: "သုတေသနပြုခြင်းနှင့် အကိုးအကားများ",
-    tutor_mode_quiz_desc: "မိမိကိုယ်ကို စစ်ဆေးခြင်း",
-    tutor_draw_capability: "ပုံကြမ်းများနှင့် ဇယားများ ရေးဆွဲပေးနိုင်သည်",
-    tutor_memory: "မှတ်ဉာဏ်",
-    tutor_memory_desc: "သင့်အကြောင်း သိရှိထားမှုများ",
-    tutor_memory_placeholder: "ဥပမာ - ကျွန်တော်က ဆေးကျောင်းသားပါ၊ တိုတိုတုတ်တုတ် ရှင်းပြတာ ကြိုက်ပါတယ်...",
-    tutor_voice_mode: "အသံဖြင့် သင်ကြားရေးစနစ်",
-    tutor_voice_mode_on: "အသံစနစ် ဖွင့်ထားသည်",
-    tutor_voice_mode_off: "အသံစနစ် ပိတ်ထားသည်",
-    tutor_language: "သင်ကြားမည့် ဘာသာစကား",
-    tutor_lang_en: "အင်္ဂလိပ်ဆရာ",
-    tutor_lang_mm: "မြန်မာဆရာ",
+    ai_welcome: "မင်္ဂလာပါ! ကျွန်တော်က သင့်ရဲ့ AI အကူအညီပေးသူပါ။ ဒီနေ့ ဘာကူညီပေးရမလဲ?",
+    ai_placeholder: "တစ်ခုခုမေးပါ...",
+    upload_docs: "စာရွက်စာတမ်းတင်ရန်",
+    upload_images: "ပုံတင်ရန်",
+    voice_input: "အသံဖြင့်မေးမြန်းရန်",
+    mode_learning: "သင်ယူမှုပုံစံ",
+    mode_research: "သုတေသနပုံစံ",
+    step_by_step: "အဆင့်ဆင့် ရှင်းပြချက်",
+    clear_chat: "စကားဝိုင်းဖျက်ရန်",
+    user_guide: "အသုံးပြုပုံလမ်းညွှန်",
+    user_guide_desc: "ဤကိရိယာကို အသုံးပြုနည်း",
+    notebook_saved: "မှတ်စုထဲသို့ သိမ်းဆည်းပြီးပါပြီ!",
+    mode_solver_desc: "အဆင့်ဆင့်တွက်ချက်မှုနှင့် LaTeX သင်္ချာ",
+    mode_research_desc: "သုတေသနပြုခြင်းနှင့် အကိုးအကားများ",
+    mode_quiz_desc: "မိမိကိုယ်ကို စစ်ဆေးခြင်း",
+    draw_capability: "ပုံကြမ်းများနှင့် ဇယားများ ရေးဆွဲပေးနိုင်သည်",
+    memory: "မှတ်ဉာဏ်",
+    memory_desc: "သင့်အကြောင်း သိရှိထားမှုများ",
+    memory_placeholder: "ဥပမာ - ကျွန်တော်က ဆေးကျောင်းသားပါ၊ တိုတိုတုတ်တုတ် ရှင်းပြတာ ကြိုက်ပါတယ်...",
+    voice_mode: "အသံစနစ်",
+    voice_mode_on: "အသံစနစ် ဖွင့်ထားသည်",
+    voice_mode_off: "အသံစနစ် ပိတ်ထားသည်",
+    instruction_language: "သင်ကြားမည့် ဘာသာစကား",
+    lang_en: "အင်္ဂလိပ်",
+    lang_mm: "မြန်မာ",
     ereader_summarize: "အနှစ်ချုပ်",
     ereader_create_mcqs: "မေးခွန်းများ ထုတ်ရန်",
     ereader_study_notes: "လေ့လာမှု မှတ်စုများ",
     ereader_exam_prep: "စာမေးပွဲအတွက် ပြင်ဆင်ရန်",
-    ereader_ai_assistant: "Toolish AI အကူအညီ",
+    ai_assistant: "Toolish AI အကူအညီ",
     ereader_ask_placeholder: "ဤစာအုပ်အကြောင်း မေးမြန်းပါ...",
     ereader_query_ai: "AI ကို မေးမြန်းပါ",
+    no_book_open: "စာအုပ်ဖွင့်မထားပါ",
+    no_book_desc: "စာဖတ်ရန် သင်၏စာကြည့်တိုက်မှ စာအုပ်တစ်အုပ်ကို ရွေးချယ်ပါ။",
+    open_library: "စာကြည့်တိုက်ဖွင့်ရန်",
     article_analysis_title: "Article Summarizer",
     article_analysis_description: "ဆောင်းပါးများကို လေ့လာမှုမှတ်စုအဖြစ် ပြောင်းလဲပေးသည်",
     enter_article_url: "ဆောင်းပါး URL ထည့်ပါ",
@@ -211,39 +215,41 @@ export type TranslationKey =
   | "contact"
   | "contact_twitter"
   | "default_bio"
-  | "tutor"
-  | "tutor_welcome"
-  | "tutor_placeholder"
-  | "tutor_upload_docs"
-  | "tutor_upload_images"
-  | "tutor_voice_input"
-  | "tutor_mode_learning"
-  | "tutor_mode_research"
-  | "tutor_step_by_step"
-  | "tutor_clear_chat"
-  | "tutor_guide"
-  | "tutor_guide_desc"
-  | "tutor_notebook_saved"
-  | "tutor_mode_solver_desc"
-  | "tutor_mode_research_desc"
-  | "tutor_mode_quiz_desc"
-  | "tutor_draw_capability"
-  | "tutor_memory"
-  | "tutor_memory_desc"
-  | "tutor_memory_placeholder"
-  | "tutor_voice_mode"
-  | "tutor_voice_mode_on"
-  | "tutor_voice_mode_off"
-  | "tutor_language"
-  | "tutor_lang_en"
-  | "tutor_lang_mm"
+  | "ai_welcome"
+  | "ai_placeholder"
+  | "upload_docs"
+  | "upload_images"
+  | "voice_input"
+  | "mode_learning"
+  | "mode_research"
+  | "step_by_step"
+  | "clear_chat"
+  | "user_guide"
+  | "user_guide_desc"
+  | "notebook_saved"
+  | "mode_solver_desc"
+  | "mode_research_desc"
+  | "mode_quiz_desc"
+  | "draw_capability"
+  | "memory"
+  | "memory_desc"
+  | "memory_placeholder"
+  | "voice_mode"
+  | "voice_mode_on"
+  | "voice_mode_off"
+  | "instruction_language"
+  | "lang_en"
+  | "lang_mm"
   | "ereader_summarize"
   | "ereader_create_mcqs"
   | "ereader_study_notes"
   | "ereader_exam_prep"
-  | "ereader_ai_assistant"
+  | "ai_assistant"
   | "ereader_ask_placeholder"
   | "ereader_query_ai"
+  | "no_book_open"
+  | "no_book_desc"
+  | "open_library"
   | "article_analysis_title"
   | "article_analysis_description"
   | "enter_article_url"

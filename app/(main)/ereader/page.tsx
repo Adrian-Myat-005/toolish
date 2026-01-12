@@ -222,7 +222,7 @@ export default function EReaderPage() {
            
            {tabs.length === 0 && (
                <div className="px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground italic flex items-center gap-3 animate-pulse">
-                   <GripHorizontal size={16} /> {t('tutor_upload_docs')}
+                   <GripHorizontal size={16} /> {t('upload_docs')}
                </div>
            )}
         </div>
