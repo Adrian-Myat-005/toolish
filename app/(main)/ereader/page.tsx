@@ -216,7 +216,7 @@ export default function EReaderPage() {
                   onClick={closeAllTabs}
                   className="px-3 py-2 text-[9px] font-black uppercase tracking-widest text-muted-foreground hover:text-destructive transition-colors flex items-center gap-2"
                >
-                  <X size={14} /> {t('clear_chat').replace('Chat', 'Tabs')}
+                  <X size={14} /> Clear Tabs
                </button>
            )}
            
